@@ -49,8 +49,8 @@ while True:
     #post_processing
     #erosion -> shrinks, thins the boundaries of objects + removing lonely pixel islands on edges
     #dilation -> expands the boundaries -> making objects bigger + fill in small gaps and holes
-    mask = cv2.erode(mask, kernel_moprh)
-    mask = cv2.dilate(mask, kernel_moprh)
+    # mask = cv2.erode(mask, kernel_moprh)
+    # mask = cv2.dilate(mask, kernel_moprh)
 
     #filter mask in frame
     result = cv2.bitwise_or(frame, frame, mask = mask) #? 
