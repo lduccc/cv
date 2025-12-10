@@ -4,6 +4,7 @@ import numpy as np
 
 
 def convolution_2d(input_name):
+    #blur images using kernel
     root = os.getcwd()
     input_path = os.path.join(root, f"images\\{input_name}")
     image = cv2.imread(input_path)
